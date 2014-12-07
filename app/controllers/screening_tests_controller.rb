@@ -27,7 +27,7 @@ class ScreeningTestsController < ApplicationController
     @screening_test = ScreeningTest.find(params[:id])
     @screening_test.assign_attributes(screening_test_params)
     if @screening_test.save
-      redirect_to screening_test_path(@screening_test)
+      redirect_to screening_tests_path
     else
       flash[:alert] = "Please make sure all fields are filled in correctly :)"
       render "edit"
@@ -42,7 +42,7 @@ class ScreeningTestsController < ApplicationController
   private 
 
   def screening_test_params
-    params.require(:screening_test).permit(
+    cleanup_params.require(:screening_test).permit(
       :name,
       :start_age,
       :end_age,
@@ -53,5 +53,10 @@ class ScreeningTestsController < ApplicationController
       :follow_up,
       :_destroy
     )
+  end
+
+  def cleanup_params
+    params[:screening_test][:gender].downcase!
+    return params  
   end
 end
