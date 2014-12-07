@@ -8,7 +8,7 @@ class ScreeningTestsController < ApplicationController
   def create
     @screening_test = ScreeningTest.new(screening_test_params)
     if @screening_test.save
-      redirect_to screening_test_path(@screening_test)
+      redirect_to screening_tests_path
     else
       flash[:alert] = "Please make sure all fields are filled in correctly :)"
       render "new"
