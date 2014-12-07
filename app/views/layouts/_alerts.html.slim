@@ -1,0 +1,15 @@
+- unless notice.blank?
+  .alert-box.notice data-alert=""
+    .row
+      .small-12.columns style="text-align: center;"
+        = notice.html_safe
+        a.close href="#"
+          | ×
+
+- unless alert.blank?
+  .alert-box.alert.warning data-alert="" style="color: #002F2F;"
+    .row
+      .small-12.columns style="text-align: center;"
+        = alert.html_safe
+        a.close href="#"
+          | ×
