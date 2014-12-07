@@ -1,7 +1,6 @@
 class PatientsController < ApplicationController
   def create
     @patient = Patient.new(patient_params)
-    @patient.gender.downcase! if @patient.gender
     if @patient.save
       redirect_to patient_path(@patient)
     else
@@ -17,12 +16,18 @@ class PatientsController < ApplicationController
   private 
 
   def patient_params
-    params.require(:patient).permit(
+    cleanup_params.require(:patient).permit(
       :age,
       :gender,
       :weight,
       :height,
       :_destroy
     )
+
+  end
+
+  def cleanup_params
+    params[:patient][:gender].downcase!
+    return params
   end
 end
