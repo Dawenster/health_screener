@@ -1,4 +1,6 @@
 class ScreeningTestsController < ApplicationController
+  http_basic_authenticate_with :name => ENV['ADMIN_USER_NAME'], :password => ENV['ADMIN_USER_PASSWORD'], :only => [:index]
+
   def index
     @screening_tests = ScreeningTest.all
   end
