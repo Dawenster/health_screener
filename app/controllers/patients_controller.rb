@@ -5,7 +5,7 @@ class PatientsController < ApplicationController
     if @patient.save
       redirect_to patient_path(@patient)
     else
-      flash[:alert] = "Please make sure all fields are filled in correctly :)"
+      flash[:alert] = @patient.errors.full_messages.join(". ") + "."
       redirect_to root_path
     end
   end
