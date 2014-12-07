@@ -1,0 +1,31 @@
+table
+  thead
+    tr
+      - ScreeningTest.column_names.each do |column_name|
+        td
+          = column_name
+  tbody
+    - @screening_tests.each do |screening_test|
+      tr
+        td
+          = screening_test.id
+        td
+          = screening_test.name
+        td
+          = screening_test.start_age
+        td
+          = screening_test.end_age
+        td
+          = screening_test.gender
+        td
+          = screening_test.interval
+        td
+          = screening_test.additional_info
+        td
+          = screening_test.source
+        td
+          = screening_test.follow_up
+        td
+          = screening_test.created_at.strftime("Created at %m/%d/%Y")
+        td
+          = screening_test.updated_at.strftime("Updated at %m/%d/%Y")
