@@ -1,0 +1,12 @@
+.row
+  .small-12.columns
+    = simple_form_for @screening_test do |f|
+      = f.input :name
+      = f.input :start_age
+      = f.input :end_age
+      = f.input :gender, as: :select, collection: ["Male", "Female", "Both"], :selected => "Both"
+      = f.input :interval
+      = f.input :additional_info
+      = f.input :source
+      = f.input :follow_up
+      = f.submit :class => "button"
