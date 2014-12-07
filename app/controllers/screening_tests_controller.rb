@@ -21,14 +21,20 @@ class ScreeningTestsController < ApplicationController
     @screening_test = ScreeningTest.find(params[:id])
   end
 
-  def show
+  def update
     @screening_test = ScreeningTest.find(params[:id])
-  end
-
-  def update    
+    @screening_test.assign_attributes(screening_test_params)
+    if @screening_test.save
+      redirect_to screening_test_path(@screening_test)
+    else
+      flash[:alert] = "Please make sure all fields are filled in correctly :)"
+      render "edit"
+    end
   end
   
   def destroy  
+    ScreeningTest.find(params[:id]).destroy
+    redirect_to screening_tests_path
   end
 
   private 
