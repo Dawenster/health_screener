@@ -12,6 +12,7 @@ class PatientsController < ApplicationController
 
   def show
     @patient = Patient.find(params[:id])
+    @screening_tests = @patient.generate_screening_tests
   end
 
   private 
