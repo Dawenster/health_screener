@@ -2,7 +2,7 @@
   .small-12.columns
     = simple_form_for @patient do |f|
       = f.input :age
-      = f.input :gender
+      = f.input :gender, as: :select, collection: ["Male", "Female"], :selected => "Male"
       = f.input :weight
       = f.input :height
       = f.submit :class => "button"
