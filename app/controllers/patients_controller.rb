@@ -1,6 +1,7 @@
 class PatientsController < ApplicationController
   def create
     @patient = Patient.new(patient_params)
+    @patient.gender.downcase! if @patient.gender
     if @patient.save
       redirect_to patient_path(@patient)
     else
