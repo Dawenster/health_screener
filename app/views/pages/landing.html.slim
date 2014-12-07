@@ -1,17 +1,8 @@
 .row
   .small-12.columns
-    form
-      .row
-        .small-12.medium-6.columns
-          label
-            | Age
-            input type="number"
-      .row
-        .small-12.medium-6.columns
-          label
-            | Gender
-            select
-              option value="male"
-                | Male
-              option value="female"
-                | Female
+    = simple_form_for @patient do |f|
+      = f.input :age
+      = f.input :gender
+      = f.input :weight
+      = f.input :height
+      = f.submit :class => "button"

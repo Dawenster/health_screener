@@ -1,4 +1,8 @@
 class PagesController < ApplicationController
-  # def landing
-  # end
+  def landing
+    @patient = Patient.new
+  end
+
+  def results
+  end
 end

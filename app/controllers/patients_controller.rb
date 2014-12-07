@@ -2,25 +2,22 @@ class PatientsController < ApplicationController
   def create
     @patient = Patient.new(patient_params)
     if @patient.save
-      flash[:notice] = "#{@patient.name} has been successfully created."
-      redirect_to patient_name_path(@patient.url)
+      redirect_to results_path
     else
-      flash.now[:alert] = "Please make sure all fields are filled in correctly :)"
-      render "new"
+      flash[:alert] = "Please make sure all fields are filled in correctly :)"
+      redirect_to root_path
     end
   end
 
   private 
 
-  def organization_params
-    params.require(:organization).permit(
-      :name,
-      :url,
-      :logo,
-      :background_image,
-      :people_descriptor,
+  def patient_params
+    params.require(:patient).permit(
+      :age,
+      :gender,
+      :weight,
+      :height,
       :_destroy
-      ]
     )
   end
 end
