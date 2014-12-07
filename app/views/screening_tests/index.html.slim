@@ -29,3 +29,7 @@ table
           = screening_test.created_at.strftime("Created at %m/%d/%Y")
         td
           = screening_test.updated_at.strftime("Updated at %m/%d/%Y")
+        td
+          = link_to "Edit", edit_screening_test_path(screening_test), :class => "button"
+        td
+          = link_to "Delete", { :id => screening_test.id, :action => :destroy }, :method => :delete, data: { confirm: "Are you sure?  You're about to delete this screening test..." }, :class => "button alert tiny"
