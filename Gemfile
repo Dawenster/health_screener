@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 
 gem 'slim'
 
+gem 'foundation-rails'
+
 group :development, :test do
   gem 'pry'
 end
