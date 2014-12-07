@@ -25,4 +25,17 @@ ActiveRecord::Schema.define(version: 20141207184414) do
     t.datetime "updated_at"
   end
 
+  create_table "tests", force: true do |t|
+    t.string   "name"
+    t.integer  "start_age"
+    t.integer  "end_age"
+    t.string   "gender"
+    t.string   "interval"
+    t.text     "additional_info"
+    t.text     "source"
+    t.text     "follow_up"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
 end
