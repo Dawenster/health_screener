@@ -2,11 +2,15 @@ class PatientsController < ApplicationController
   def create
     @patient = Patient.new(patient_params)
     if @patient.save
-      redirect_to results_path
+      redirect_to patient_path(@patient)
     else
       flash[:alert] = "Please make sure all fields are filled in correctly :)"
       redirect_to root_path
     end
+  end
+
+  def show
+    @patient = Patient.find(params[:id])
   end
 
   private 

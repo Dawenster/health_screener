@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
   root "pages#landing"
 
-  get "/results" => "pages#results", as: :results
-
-  resources :patients, :only => [:create]
+  resources :patients, :only => [:create, :show]
 end
