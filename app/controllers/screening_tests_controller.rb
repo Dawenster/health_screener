@@ -57,6 +57,17 @@ class ScreeningTestsController < ApplicationController
 
   def cleanup_params
     params[:screening_test][:gender].downcase!
+    params[:screening_test][:additional_info] = add_ending_period(params[:screening_test][:additional_info])
+    params[:screening_test][:follow_up] = add_ending_period(params[:screening_test][:follow_up])
     return params  
+  end
+
+  def add_ending_period (old_string)
+    old_string.rstrip!
+    if(old_string.length!=0 && old_string[-1,1]!=".")
+      return old_string + "."
+    else
+      return old_string
+    end
   end
 end
