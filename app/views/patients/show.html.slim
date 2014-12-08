@@ -8,9 +8,8 @@
           = screening_test.name
         li.description
           = "This test is indicated for #{screening_test.get_gender_string} #{screening_test.get_age_range_string} once every #{screening_test.interval}. "
-          = screening_test.additional_info
+          = screening_test.get_additional_info
           = screening_test.get_follow_up
-
           = screening_test.get_source
           
 

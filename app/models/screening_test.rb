@@ -42,17 +42,19 @@ class ScreeningTest < ActiveRecord::Base
 
   def get_source
     if self.source.length !=0
-      return "Source: "+self.source+". "
-    else
-      return ""
+      return "Source: "+self.source+" "
     end
   end
 
   def get_follow_up
     if self.follow_up.length !=0
-      return "For a positive test, appropriate follow up is "+self.follow_up+". "
-    else
-      return 
+      return "For a positive test, appropriate follow up is "+self.follow_up+" "
+    end
+  end
+
+  def get_additional_info
+    if self.additional_info.length !=0 
+      return self.additional_info + " "
     end
   end
 

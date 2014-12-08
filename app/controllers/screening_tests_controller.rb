@@ -59,6 +59,7 @@ class ScreeningTestsController < ApplicationController
     params[:screening_test][:gender].downcase!
     params[:screening_test][:additional_info] = add_ending_period(params[:screening_test][:additional_info])
     params[:screening_test][:follow_up] = add_ending_period(params[:screening_test][:follow_up])
+    params[:screening_test][:source] = add_ending_period(params[:screening_test][:source])
     return params  
   end
 
