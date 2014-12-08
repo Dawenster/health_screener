@@ -1,3 +1,20 @@
-= "Hi person who is #{@patient.age} years old"
+= "The following tests are recommended for an average #{@patient.age} year-old #{@patient.gender}:"
 - @screening_tests.each do |screening_test|
-  = screening_test.name
+  - gender_string = "males or females"
+  - case screening_test.gender
+    - when "male"
+    - gender_string = "males"
+    - when "female"
+    - gender_string = "females"
+    - else
+    - gender_string = "males or females"
+
+    .title
+      = screening_test.name
+    .content
+      = "This test is indicated for " + gender_string
+
+
+
+
+
