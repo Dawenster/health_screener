@@ -1,0 +1,95 @@
+disease,gender,start_age,starting_criteria,end_age,ending_criteria,interval,name,alternative_tests,follow_up,additional_risk_factors,additional_info,source
+CRC,both,50,,75,,every 1-2 years,FIT test,colonoscopy q10 years,colonoscopy,"Family history of 1) single first degree relative with CRC under age 60 or 2) two or more first degree relatives with CRC at any age:
+
+Colonoscopy every 5 years starting at age 40, or 10 years earlier than the age of youngest affected relative at diagnosis.
+Long standing (at least 8 years) inflammatory bowel disease involving the colon:
+
+Colonoscopy every 1 to 2 years with multiple biopsies to detect occult neoplasia (dysplasia).
+
+FAP/HNPCC: referral to specialists to follow",,BC Guidelines: http://www.bcguidelines.ca/guideline_colorectal_det.html
+cervical cancer,female,25,"have no symptoms of cervical cancer such as vaginal bleeding, 
+are or have been sexually active, regardless of sexual orientation
+do NOT have previous abnormal results on screening (unless they have been cleared to return to normal screening),
+has NOT had a hysterectomy,
+are NOT immunosuppressed (e.g., as a result of organ transplantation, chemotherapy, chronic corticosteroid treatment, HIV infection),
+does not have a limited life expectancy",70,3 successive negative Pap tests in the last 10 years,every 3 years,pap smear,,"LSIL/ASCUS: repeat pap q6mo x 24mo
+
+HSIL/ASC-H/AGC/AIS: colposcopy
+
+cancer: refer",,,Canadian Task Force: http://canadiantaskforce.ca/ctfphc-guidelines/2013-cervical-cancer/
+breast cancer,female,50,,75,,every 2-3 years,mammogram,,"diagnostic mammogram, ultrasound, and/or biopsy of the lesion","personal history of breast cancer, history of breast cancer in first degree relative, known BRCA1/BRCA2mutation, or prior chest wall radiation; women aged 40-49 are at an increased risk of false-positive tests and decreased chances of benefitting from a screening mammogram, so decision to screen with mammogram at this age group should be individualized",,Canadian Task Force: http://canadiantaskforce.ca/ctfphc-guidelines/2011-breast-cancer/
+prostate cancer,male,50,with >10 year life expectancy,75,,every 1-4 years,DRE and PSA,,referral for prostate biopsy,start at age 40 if: family history of PCa or if the patient is of African descent. ,*SPECIAL NOTE* The US Preventive Services Task Force and Canadian Preventive Services Task Force both recommend AGAINST routine screening of prostate cancer using PSA due to the potential harm of over-investigation which includes prostate infection and erectile dysfunction. Talk to your doctor about the controversy regarding prostate cancer screening.,CUA guideline: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3147035/
+,,,,,,,,,,,,
+diabetes,both,40,or high risk on CANRISK calculator,,,every 3 years,A1C,FPG,,"earlier screening in patients with additional risk factors:
+First-degree relative with type 2 diabetes
+Member of high-risk population (e.g. people of Aboriginal, African, Asian Hispanic, or South Asian descent)
+History of prediabetes (IGT or IFG or A1C 6.0 to 6.4%)
+History of gestational diabetes mellitus
+History of delivery of a macrosomic infant
+Presence of end organ damage associated with diabetes:
+Microvascular (retinopathy, neuropathy, nephropathy)
+Macrovascular (coronary, cerebrovascular, peripheral)
+Presence of vascular risk factors:
+HDL cholesterol level <1.0 mmol/L in males, <1.3 mmol/L in females triglycerides ≥1.7 mmol/l
+Hypertension
+Overweight
+Abdominal obesity
+Presence of associated diseases:
+Polycystic ovary syndrome
+Acanthosis nigricans
+Psychiatric disorders (bipolar disorder, depression, schizophrenia)
+HIV infection
+Obstructive Sleep Apnea (OSA)
+Use of drugs associated with diabetes:
+Glucocorticoids
+Atypical antipsychotics
+Highly Active Antiretroviral Therapy (HAART )
+Other (see Appendix 1)",,CDA: http://guidelines.diabetes.ca/screeninganddiagnosis/screening
+hypertension,both,18,"new patient visits, periodic health exams, urgent office visits for neurological or cardiovascular related issues, medication renewal visits, and other visits where the Primary Care Physician deems it an appropriate opportunity to monitor blood pressure",,,as appropriate,,,,,,Canadian Task Force: http://canadiantaskforce.ca/ctfphc-guidelines/2012-hypertension/clinician-summary/
+dyslipidemia,male,40,,,,,"Calculate FRS, and measure HDL, LDL, TG, glucose, eGFR
+optional: apoB, urine ACR",,,"screen at any age: 
+smoking, diabetes, arterial hypertension, obesity
+rheumatoid arthritis, systemic lupus erythematosus, psoriatic arthritis, ankylosing spondylitis, inflammatory bowel diseases, chronic obstructive pulmonary disease, chronic HIV infection, CKD, abdominal aneurysm, and erectile dysfunction
+
+screen at an earlier age:
+First Nations or of South Asian ancestry",,CCS: http://www.onlinecjc.ca/article/S0828-282X(12)01510-3/fulltext#sec1
+dyslipidemia,female,50,or postmenopausal,,,,"Calculate FRS, and measure HDL, LDL, TG, glucose, eGFR
+optional: apoB, urine ACR",,,"screen at any age: 
+smoking, diabetes, arterial hypertension, obesity
+rheumatoid arthritis, systemic lupus erythematosus, psoriatic arthritis, ankylosing spondylitis, inflammatory bowel diseases, chronic obstructive pulmonary disease, chronic HIV infection, CKD, abdominal aneurysm, and erectile dysfunction
+
+screen at an earlier age:
+First Nations or of South Asian ancestry",,CCS: http://www.onlinecjc.ca/article/S0828-282X(12)01510-3/fulltext#sec2
+osteoporosis,both,65,,,,every 5 years,"BMD testing, FRAX/CAROC scores",,"Rule out secondary causes:
+Calcium, corrected for albumin
+• Complete blood count
+• Creatinine
+• Alkaline phosphatase
+• Thyroid-stimulating hormone
+• Serum protein electrophoresis (for patients with vertebral
+fractures)
+• 25-Hydroxyvitamin D* (if indicated)","screen from 50-64:
+Parental hip fracture
+vertebral fracture/osteopenia on radiography
+current smoking
+high alcohol intake
+low body weight or major weight loss
+RA
+
+screen from any age:
+Fragility fracture
+prolonged use of glucocorticoids
+use of high-risk medications
+hypogonadism or premature menopause
+malabsorption syndrome
+primary HPTH
+other disorders associated with bone loss",,Osteoporosis Canada: http://www.cmaj.ca/content/early/2010/10/12/cmaj.100771.full.pdf
+AAA,male,65,and history of smoking,75,,once,abdominal ultrasound,,"Open surgical repair of an aneurysm of at least 5.5 cm leads to decreased abdominal aortic aneurysm-related mortality in the long term; however, there are major harms associated with this procedure.",,,US Preventive Services Task Force: http://www.uspreventiveservicestaskforce.org/Page/Topic/recommendation-summary/abdominal-aortic-aneurysm-screening
+Alcohol misuse,both,18,,,,at appropriate visits,interview,,"Counseling interventions in the primary care setting can improve unhealthy alcohol consumption behaviors in adults engaging in risky or hazardous drinking. Behavioral counseling interventions for alcohol misuse vary in their specific components, administration, length, and number of interactions. Brief multicontact behavioral counseling seems to have the best evidence of effectiveness; very brief behavioral counseling has limited effect.",,,http://www.uspreventiveservicestaskforce.org/Page/Topic/recommendation-summary/alcohol-misuse-screening-and-behavioral-counseling-interventions-in-primary-care
+Chlamydia and gonorrhea,female,sexual debut,or at an increased risk for STI,24,,every 1 year,urine test or vaginal swab,,treatment with antibiotics,,,USPSTF: http://www.ahrq.gov/professionals/clinicians-providers/guidelines-recommendations/guide/section2a.html
+Hepatitis C,both,50,(recommended for adults born between 1945 and 1965),70,,once unless increased risk from subsequent exposures,,,,"The most important risk factor for HCV infection is past or current injection drug use. Additional risk factors include receiving a blood transfusion before 1992, long-term hemodialysis, being born to an HCV-infected mother, incarceration, intranasal drug use, getting an unregulated tattoo, and other percutaneous exposures.",,USPSTF: http://www.ahrq.gov/professionals/clinicians-providers/guidelines-recommendations/guide/section2b.html
+HIV,both,15,or at an increased risk,65,,as appropriate,serum immunoassay,,"confirmatory blood test (Western blot). If positive, HAART therapy. ","Men who have sex with men and active injection drug users are at very high risk for new HIV infection. Other persons at high risk include those who have acquired or request testing for other sexually transmitted infections.
+Behavioral risk factors for HIV infection include:
+Having unprotected vaginal or anal intercourse; Having sexual partners who are HIV-infected, bisexual, or injection drug users; Exchanging sex for drugs or money",,USPSTF: http://www.ahrq.gov/professionals/clinicians-providers/guidelines-recommendations/guide/section2b.html
+lung cancer,both,55,and have a 30 pack-year smoking history,80,or have quit smoking for more than 15 years,1 year,low dose CT scan,,further imaging and biopsy if necessary,,,USPSTF: http://www.ahrq.gov/professionals/clinicians-providers/guidelines-recommendations/guide/section2c.html
+obesity,both,6,,,,as appropriate,BMI calculation,waist circumference for adults,,,,USPSTF: http://www.ahrq.gov/professionals/clinicians-providers/guidelines-recommendations/guide/section3.html
