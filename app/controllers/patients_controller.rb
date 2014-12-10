@@ -22,6 +22,7 @@ class PatientsController < ApplicationController
       :gender,
       :weight,
       :height,
+      :smoking_history,
       :_destroy
     )
 
