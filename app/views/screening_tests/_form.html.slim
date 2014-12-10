@@ -1,12 +1,17 @@
 = simple_form_for @screening_test do |f|
   = f.input :name
-  = f.input :start_age
-  = f.input :end_age
+  = f.input :disease
   = f.input :gender, as: :select, collection: ["Male", "Female", "Both"], :selected => "Both"
+  = f.input :start_age
+  = f.input :starting_criteria
+  = f.input :end_age
+  = f.input :ending_criteria
+  = f.input :additional_risk_factors
   = f.input :interval
+  = f.input :alternative_tests
+  = f.input :follow_up
   = f.input :additional_info
   = f.input :source
-  = f.input :follow_up
   = f.submit :class => "button"
   - if @screening_test.id
     div
