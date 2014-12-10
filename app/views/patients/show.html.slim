@@ -12,7 +12,7 @@
       li.bullet-item
         = screening_test.get_age_range_string
       li.bullet-item
-        = "Every " + screening_test.interval
+        = "Every " + screening_test.interval.to_s
       li.description
         = "This test is indicated for #{screening_test.get_gender_string} #{screening_test.get_age_range_string} once every #{screening_test.interval}. "
         = screening_test.get_additional_info
