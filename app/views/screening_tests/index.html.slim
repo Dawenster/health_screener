@@ -12,19 +12,29 @@ table
         td
           = screening_test.name
         td
-          = screening_test.start_age
-        td
-          = screening_test.end_age
+          = screening_test.disease
         td
           = screening_test.gender
         td
+          = screening_test.start_age
+        td
+          = screening_test.starting_criteria
+        td
+          = screening_test.end_age
+        td
+          = screening_test.ending_criteria
+        td
+          = screening_test.additional_risk_factors
+        td
           = screening_test.interval
+        td
+          = screening_test.alternative_tests
+        td
+          = screening_test.follow_up
         td
           = screening_test.additional_info
         td
           = screening_test.source
-        td
-          = screening_test.follow_up
         td
           = screening_test.created_at.strftime("Created at %m/%d/%Y")
         td
