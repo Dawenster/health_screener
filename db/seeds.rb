@@ -8,6 +8,6 @@
 
 require 'csv'
 
-CSV.foreach('/Library/WebServer/Documents/rails projects/health_screener/screening_tests_seed.csv', :headers => true) do |row|
+CSV.foreach('/Library/WebServer/Documents/rails projects/health_screener/db/screening_tests_seed.csv', :headers => true) do |row|
   ScreeningTest.create!(row.to_hash)
 end
